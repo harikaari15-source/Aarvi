@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+  color: #222;
+}
+
+header {
+  background: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+}
+
+header h2 {
+  color: #111;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #444;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff4d6d;
+}
+
+.hero {
+  padding: 70px 30px;
+  text-align: center;
+  background: linear-gradient(to right, #ff4d6d, #ff8fab);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: white;
+  color: #ff4d6d;
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.price {
+  font-weight: bold;
+  color: #ff4d6d;
+  margin-bottom: 10px;
+}
+
+.small-btn {
+  background: #ff4d6d;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.small-btn:hover {
+  opacity: 0.9;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.form-box {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+input, textarea, select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #ff4d6d;
+}
+
+button {
+  background: #ff4d6d;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
